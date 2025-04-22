@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage[final]{neurips_2023}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+
+
+\title{Chain-of-Thought Prompting Elicits Reasoning in Large Language Models}
+
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+SOONHO KIM \\
+Team 14 - 20200703\\
+}
+
+
+\begin{document}
+
+
+\maketitle
+
+\section{Topic}
+\textbf{Chain-of-Thought Prompting for Enhancing Reasoning in Large Language Models} \\
+This paper explores how prompting large language models (LLMs) with intermediate reasoning steps, called "Chain-of-Thought" (CoT), can improve performance on complex tasks like arithmetic, commonsense, and symbolic reasoning by enabling multi-step thinking and sequential logic.
+
+\section{Problem Definition}
+Despite recent advances, scaling up LLMs alone does not guarantee strong performance on complex reasoning tasks like math problems or commonsense inference. Traditional prompting often fails on multi-step reasoning tasks. Fine-tuning models with reasoning paths is costly, requiring large labeled data and computation. Thus, a prompt-based method is needed to elicit reasoning without training.
+
+\section{Proposed Method}
+The authors propose \textit{Chain-of-Thought Prompting}, which enhances few-shot prompting by including natural language reasoning steps between the question and final answer. Each example includes an input, a chain of thought, and an answer. These chains are written in natural language, mimicking human step-by-step reasoning. Experiments on diverse reasoning tasks show that CoT significantly improves performance in large models like PaLM 540B and GPT-3 175B. The method is robust to prompt variation and requires no fine-tuning, making it scalable and cost-effective.
+
+\section{Discussion}
+Our project is directly inspired by the key idea introduced in “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models,” where prompting techniques help large language models perform complex reasoning without additional training. While the original paper demonstrates this effect mainly in arithmetic, commonsense, and symbolic reasoning tasks, we extend this approach to a new and less explored domain: strategic gameplay in chess.
+
+Unlike the original work, which evaluates LLMs in static QA settings, our project involves dynamic decision-making, interaction with evolving game states, and the need for long-term planning. We further explore the feasibility of not only linear Chain-of-Thought prompting, but also the more recent Graph-of-Thought (GoT) paradigm to allow for parallel reasoning and revision. Through this, we aim to build a general-purpose, interpretable, and adaptable game-playing agent that operates entirely through prompt-based inference—without any domain-specific training or simulation.
+
+In summary, our work is influenced by the prompting philosophy of the paper but diverges in its application to an interactive, strategic, and potentially multi-modal task space.
+
+
+\end{document}
