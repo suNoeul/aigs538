@@ -1,5 +1,6 @@
 2025-1 Deep Learning - Assignment1/*
 2025-1 Deep Learning - Assignment2/*
+2025-1 Deep Learning - Assignment3/*
 2025-1 Deep Learning - Project Proposal/*
 
 !2025-1 Deep Learning - Assignment1/*.pdf
@@ -12,6 +13,12 @@
 !2025-1 Deep Learning - Assignment2/*.sty
 !2025-1 Deep Learning - Assignment2/*.bib
 !2025-1 Deep Learning - Assignment2/*.png
+
+!2025-1 Deep Learning - Assignment3/*.pdf
+!2025-1 Deep Learning - Assignment3/*.tex
+!2025-1 Deep Learning - Assignment3/*.sty
+!2025-1 Deep Learning - Assignment3/*.bib
+!2025-1 Deep Learning - Assignment3/*.png
 
 !2025-1 Deep Learning - Project Proposal/*.pdf
 !2025-1 Deep Learning - Project Proposal/*.tex
